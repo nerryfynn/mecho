@@ -17,10 +17,10 @@ const userPortfolios = {
 // API endpoints
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === 'admin' && password === 'pass123') {
-    res.json({ success: true, role: 'admin' });
-  } else if (username === 'user' && password === 'userpass') {
+  if (username === 'Becky_tesla' && password === 'Tesla2026') {
     res.json({ success: true, role: 'user' });
+  } else if (username === 'admin' && password === 'pass123') {
+    res.json({ success: true, role: 'admin' });
   } else {
     res.json({ success: false, message: 'Invalid credentials' });
   }
@@ -126,7 +126,6 @@ const htmlTemplate = `<!DOCTYPE html>
     <input type="password" id="loginPassword" placeholder="Password">
     <button id="loginBtn">Login</button>
     <div id="loginErrorMessage" class="login-error"></div>
-    <div class="login-note" style="margin-top:12px; font-size:0.7rem;">User: user / userpass | Admin: admin / pass123</div>
   </div>
 </div>
 
